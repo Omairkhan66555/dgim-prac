@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <title>DGIM Practical | Big Data Analytics</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #0b1020;
+      color: #f1f5f9;
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .eyebrow {
+      color: #67e8f9;
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: clamp(34px, 5vw, 54px);
+      color: #67e8f9;
+      margin: 15px 0;
+    }
+
+    .intro {
+      color: #b6c5df;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+
+    .card {
+      background: #121c30;
+      border: 1px solid #293750;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .head {
+      padding: 18px;
+      border-bottom: 1px solid #293750;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .sub {
+      color: #9eacc5;
+      font-size: 13px;
+      margin-top: 5px;
+    }
+
+    button,
+    .btn {
+      background: #0891b2;
+      color: white;
+      border: 0;
+      border-radius: 8px;
+      padding: 12px 15px;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+    }
+
+    button:hover,
+    .btn:hover {
+      background: #0e7490;
+    }
+
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .codebox {
+      background: #080d18;
+      min-height: 200px;
+      max-height: 650px;
+      overflow: auto;
+    }
+
+    pre {
+      margin: 0;
+      padding: 20px;
+      color: #dce8fa;
+      font: 13px/1.8 Consolas, monospace;
+      white-space: pre;
+      tab-size: 4;
+    }
+
+    .status {
+      padding: 12px 18px;
+      font-size: 12px;
+      color: #9eacc5;
+      border-top: 1px solid #293750;
+    }
+
+    .doc {
+      padding: 22px;
+    }
+
+    .fileicon {
+      width: 48px;
+      height: 55px;
+      background: #18344b;
+      color: #67e8f9;
+      border: 1px solid #31516a;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .doc p {
+      color: #b6c5df;
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    .doc .btn {
+      margin-top: 8px;
+      margin-right: 5px;
+    }
+
+    .details {
+      padding: 18px 22px;
+      border-top: 1px solid #293750;
+      color: #b6c5df;
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    .details strong {
+      color: #f1f5f9;
+    }
+
+    footer {
+      text-align: center;
+      color: #7787a3;
+      font-size: 12px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 750px) {
+      main {
+        margin: 20px auto;
+        padding: 14px;
+      }
+
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .head {
+        flex-wrap: wrap;
+      }
+
+      pre {
+        padding: 15px;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="eyebrow">BIG DATA ANALYTICS LAB · CSL702</div>
+
+    <h1>DGIM Algorithm</h1>
+
+    <p class="intro">
+      Parallelized counting of 1s in multiple binary data streams
+      using Python and ThreadPoolExecutor.
+    </p>
+
+    <div class="layout">
+
+      <!-- PYTHON SOURCE CODE -->
+      <section class="card">
+        <div class="head">
+          <div>
+            <strong>Python Source Code</strong>
+            <div class="sub">DGIM + ThreadPoolExecutor</div>
+          </div>
+
+          <button id="copyBtn" disabled>Loading...</button>
+        </div>
+
+        <div class="codebox">
+          <pre><code id="code">Loading Python code...</code></pre>
+        </div>
+
+        <div class="status" id="codeStatus">
+          Loading source file...
+        </div>
+      </section>
+
+      <!-- PRACTICAL DOCUMENT -->
+      <section class="card">
+        <div class="head">
+          <strong>Practical Document</strong>
+        </div>
+
+        <div class="doc">
+          <div class="fileicon">DOCX</div>
+
+          <h3>DGIM Practical Report</h3>
+
+          <p>
+            Problem statement, dataset description,
+            implementation code and output section.
+          </p>
+
+          <a
+            class="btn"
+            href="/DGIM_Big_Data_Analytics_Practical.docx"
+            download
+          >
+            Download Document
+          </a>
+
+          <p>
+            <strong>Subject:</strong>
+            Big Data Analytics Lab (CSL702)
+          </p>
+
+          <p>
+            <strong>Topic:</strong>
+            Parallelized DGIM Algorithm
+          </p>
+        </div>
+
+        <div class="details">
+          <div><strong>Department:</strong> Computer Engineering</div>
+          <div><strong>Year:</strong> B.E.</div>
+          <div><strong>Language:</strong> Python</div>
+        </div>
+      </section>
+
+    </div>
+
+    <footer>
+      DGIM Practical · Big Data Analytics Lab
+    </footer>
+  </main>
+
+  <script>
+    let sourceCode = "";
+
+    const codeElement = document.getElementById("code");
+    const copyBtn = document.getElementById("copyBtn");
+    const codeStatus = document.getElementById("codeStatus");
+
+    // Load Python code from the public folder.
+    fetch("/dgim_code.txt")
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error("Python file not found");
+        }
+
+        return response.text();
+      })
+      .then(function (text) {
+        sourceCode = text;
+        codeElement.textContent = text;
+        copyBtn.textContent = "Copy Code";
+        copyBtn.disabled = false;
+        codeStatus.textContent = "Python source code loaded successfully.";
+      })
+      .catch(function (error) {
+        codeElement.textContent =
+          "Could not load code. Check the public folder and file name.";
+
+        codeStatus.textContent = error.message;
+        copyBtn.textContent = "Code unavailable";
+      });
+
+    // Copy the entire Python program.
+    copyBtn.addEventListener("click", async function () {
+      if (!sourceCode) {
+        return;
+      }
+
+      try {
+        await navigator.clipboard.writeText(sourceCode);
+
+        copyBtn.textContent = "Copied! ✓";
+        codeStatus.textContent = "Code copied to clipboard.";
+
+        setTimeout(function () {
+          copyBtn.textContent = "Copy Code";
+        }, 1800);
+
+      } catch (error) {
+        // Fallback for browsers where Clipboard API is unavailable.
+        const textarea = document.createElement("textarea");
+
+        textarea.value = sourceCode;
+        textarea.style.position = "fixed";
+        textarea.style.left = "-9999px";
+
+        document.body.appendChild(textarea);
+        textarea.select();
+
+        const copied = document.execCommand("copy");
+        textarea.remove();
+
+        if (copied) {
+          copyBtn.textContent = "Copied! ✓";
+          codeStatus.textContent = "Code copied to clipboard.";
+        } else {
+          codeStatus.textContent =
+            "Copy failed. Please select and copy the code manually.";
+        }
+      }
+    });
+  </script>
+</body>
+</html>
